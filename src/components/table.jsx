@@ -129,7 +129,7 @@ function Table({ user }) {
 
         // Age validation (must be > 18)
         const age = Number(form.age);
-        if (age <= 18) {
+        if (age < 18) {
             alert("Age must be greater than 18");
             return;
         }
